@@ -328,9 +328,11 @@ body {
 }
 
 .solution-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
   background: rgba(245, 244, 250, 1);
   margin-bottom: 30px;
 }
@@ -439,8 +441,11 @@ body {
   background: var(--link-color);
 }
 
-.team-item-link:hover .team-icon,
-.team-item-link:focus .team-item {
+.team-item-link:hover .team-icon {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.team-item-link:focus .team-icon {
   fill: rgba(255, 255, 255, 1);
 }
 /* -----------Clients---------- */
@@ -616,6 +621,8 @@ body {
   border-bottom: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .sites-title {
